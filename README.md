@@ -5,13 +5,13 @@ contains architecture/governance documents
 **Content**
 ```bash
 ├── Objective
-├── Data sources
-│   ├── Financial sources 
-│   └── Social Sources
-└── Architecture
-    ├── Platform
-    ├── Tech stack
-    └── Structure
+├── Architecture
+│   ├── Platform
+│   ├── Structure
+│   └── Tech Stack
+└── Data sources
+    ├── Financial sources 
+    └── Social Sources
 ```
 
 
@@ -23,13 +23,29 @@ data analytics company which collects:
 
 which will generate alpha based on the sentiment from social media data to understand the market's growth.
 
+## Architecture
+
+### Platform 
+
+Google cloud platform (**GCP**) will be the main platform used to develop this service.
+
+### Diagram
+
+*UML in progress*
+
+### Tech Stack
+
+*work in progress*
+
+
+
 ##  Data sources
 
 This will be focused around using free api sources
 
 ### Financial Data 
 
-Majority would consist of multiple sources of macro data + one soruce of mirco data
+Majority would consist of multiple sources of macro data + one source of mirco data
 
 #### Yahoo Finance
 
@@ -87,16 +103,3 @@ Majority would consist of multiple sources of macro data + one soruce of mirco d
 - **Format:** JSON
 - **Notes:** *work in progress* add '.json' suffix to url returns the json data of the page.
 
-## Architecture
-
-### Platform 
-
-Google cloud platform (**GCP**) will be the main platform used to develop this service.
-
-### Tech Stack
-
-*work in progress*
-
-### Diagram
-
-*UML in progress*
