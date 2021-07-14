@@ -1,7 +1,6 @@
 # wiki
 contains architecture/governance documents 
 
-
 **Content**
 ```bash
 ├── Objective
@@ -13,7 +12,6 @@ contains architecture/governance documents
     ├── Financial sources 
     └── Social Sources
 ```
-
 
 ## Objective of GranyteTech
 
@@ -31,7 +29,7 @@ Google cloud platform (**GCP**) will be the main platform used to develop this s
 
 ### Diagram
 
-*UML in progress*
+![UML diagram of general architecture](/diagrams/general_diagram.png)
 
 ### Tech Stack
 
