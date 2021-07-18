@@ -59,7 +59,7 @@ Majority would consist of multiple sources of macro data + one source of mirco d
 
 #### World Bank
 
-- **Docs:** https://datahelpdesk.worldbank.org/knowledgebase/-articles/889392-about-the-indicators-api-documentation
+- **Docs:** https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation
 - **Format:** XML
 - **Notes:** *work in progress* still need exploring 
 
