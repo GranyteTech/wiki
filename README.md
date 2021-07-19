@@ -1,5 +1,5 @@
 # wiki
-contains architecture/governance documents 
+contains architecture/governance documents on how this project will be built.
 
 **Content**
 ```bash
@@ -33,9 +33,58 @@ Google cloud platform (**GCP**) will be the main platform used to develop this s
 
 ### Tech Stack
 
-*work in progress*
+#### DevOps
 
+Infrastructure handler (any one):
+- Terraform
+- Pulumi
+- Deployment manager (not recommended)
 
+Python3 (Basic, able to complete easy leetcode questions):
+- pytest
+- unittest
+- pulumi
+
+General:
+- Docker/Containerd
+- GCP: Cloud Build
+- GCP: Secret Manager 
+- GCP: IAM, roles, policies & Service accounts
+- Good understanding of Scalable architecture
+
+#### DE, DS, MLE
+
+Python3 (Basic, able to complete easy leetcode questions):
+- jupyter notebook
+- numpy
+- pandas
+- pytorch/keras (not chosen as of yet)
+
+General:
+- Docker/Containerd
+- GCP: Cloud Build
+- GCP: Cloud Run/GCP: Cloud Function
+- GCP: Big Query
+- SQL (Basic, able to complete easy leecode questions)
+- Understand how transformers work (but do not need to know how to program them)
+- Know how to setup GPU acceleration
+
+#### SWE, BED (in late stages)
+
+JavaScript (Basic, able to complete easy leetcode questions):
+- typescript
+- node js 
+- express
+
+Python3 (Basic, able to complete easy leetcode questions):
+- Django
+- Flask 
+
+General:
+- Docker/Containerd
+- GCP: Cloud Build
+- GCP: App Engine
+- Good understanding how to build 
 
 ##  Data sources
 
