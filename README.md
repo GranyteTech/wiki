@@ -17,9 +17,36 @@ contains architecture/governance documents on how this project will be built.
 
 data analytics company which collects:
 - financial data
-- social media data
+- Nominal data
 
-which will generate alpha based on the sentiment from social media data to understand the market's growth.
+which will generate alpha based on the sentiment from Nominal data to understand the market's growth
+while minimising cost on GCP. 
+
+The inference will try to predict short term(roughly 3-6 months ahead) investments on how well the security will do.
+
+### Costs
+
+- Nominal data will be quantified by it's sentiment and aggregated to reduce training cost.
+- All Data will be accessed from GCS buckets (collecting data from Big Query is too costly).
+- All GCS bucket data will be partitioned into months (to reduce querying cost: Operation A costs).
+- All APIs will use pagination to limit usage.
+- Data collection will be batched by weekly or monthly ingestions. (cheaper than day/streaming).
+
+### Failsafes & Products
+
+If the project is unsuccessful, it can still be slavaged with 2 failsafes, which will deliver well structured, organised data to clients.
+
+#### Failsafe 1: Strucuted finanical data
+
+Low risk, low/none reward
+
+Fast to implement, however multiple companies provide services such as this.
+
+#### Failsafe 2: Strucuted nominal data
+
+**extremely high risk**, med reward
+
+A few services will collect data from multiple sources in a structured manner under one topic.
 
 ## Architecture
 
