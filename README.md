@@ -127,29 +127,49 @@ Majority would consist of multiple sources of macro data + one source of mirco d
 - **Format:** JSON
 - **Notes:** Data delayed by a day, based on web scraping.
 
-#### World Trade Organization
+#### WTO: World Trade Organization
 
 - **Docs:** https://apiportal.wto.org/docs/services
 - **Format:** ?
 - **Notes:** *work in progress* Require login/API key
 
-#### World Bank
+#### WB: World Bank
 
 - **Docs:** https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation
-- **Format:** XML
-- **Notes:** *work in progress* still need exploring 
+- **Format:** JSON/XML
+- **Notes:** [Click here](https://datatopics.worldbank.org/world-development-indicators/) to view their databases and [here](https://datahelpdesk.worldbank.org/knowledgebase/articles/898581) to read documentation on how to use API. Very easy to use.
 
-#### Index Monetary Fund
+#### IMF: International Monetary Fund
 
 - **Docs:** https://datahelp.imf.org/knowledgebase/articles/667681-using-json-restful-web-service
-- **Format:** XML
-- **Notes:** *work in progress* still need exploring 
+- **Format:** JSON/XML
+- **Notes:** [Click here](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42&sId=1479329132316) for database information and their ISO ID, [Click here](https://datahelp.imf.org/knowledgebase/articles/1968408-how-to-use-the-api-python-and-r) on Docs how to use it, you may need to grab **"GenericMetadata"** of the database before accessing the table as there's no documents of the table's ID.
 
-#### US BUREAU OF LABOUR STATISTICS
+        example
+        http://dataservices.imf.org/REST/SDMX_{FORMAT}.svc/GenericMetadata/{DATABASE ID}
+
+#### BLS: US BUREAU OF LABOUR STATISTICS (Deprecated)
 
 - **Docs:** https://www.bls.gov/developers/api_python.htm
 - **Format:** JSON
 - **Notes:** *work in progress* Require login/API key
+
+
+#### FRED: Federal Reserve Economic Data
+
+- **Docs:** https://github.com/mortada/fredapi
+- **Format:** ?
+- **Notes:** *work in progress* Require login/API key, Godtier client library that contains **BLS** data (ONLY US)
+
+#### BEA: Bureau of Economic Analysis
+
+- **Docs:** https://apps.bea.gov/api/_pdf/bea_web_service_api_user_guide.pdf
+- **Format:** ?
+- **Notes:** *work in progress* Require login/API key, https://en.wikipedia.org/wiki/Bureau_of_Economic_Analysis
+
+#### Sources to look at
+World Bank, UN, Eurostat, ADB, BEA, BLS, FRED
+
 
 ### Social media
 
@@ -176,4 +196,6 @@ Majority would consist of multiple sources of macro data + one source of mirco d
 - **Docs:** https://www.reddit.com/r/TheoryOfReddit/wiki/collecting_data
 - **Format:** JSON
 - **Notes:** *work in progress* add '.json' suffix to url returns the json data of the page.
+
+
 
